@@ -7,8 +7,6 @@ excel_file_path = "mllab1\Lab Session Data.xlsx"
 
 df = pd.read_excel(excel_file_path,sheet_name='IRCTC Stock Price')
 
-print(df.head())
-
 m=st.mean(df["Price"])
 print("the mean of the data is " , m)
 v=st.variance(df["Price"])
