@@ -13,7 +13,7 @@ print(df.dtypes)
 
 
 
-nominal_cols = ["age","sex"]
+nominal_cols = ["sex"]
 df = pd.get_dummies(df, columns=nominal_cols, drop_first=True)
 
 
